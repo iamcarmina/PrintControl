@@ -1,0 +1,14 @@
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\WIndowsPrintApp.csprojAssemblyReference.cache
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\PrintControl.FormException.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\PrintControl.FormLogin.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\PrintControl.FormConfig.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\PrintControl.FormPrint.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\PrintControl.FormTest.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\PrintControl.Properties.Resources.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\WIndowsPrintApp.csproj.GenerateResource.cache
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\WIndowsPrintApp.csproj.CoreCompileInputs.cache
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\SmarteCOPrintControl.FormException.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\SmarteCOPrintControl.FormLogin.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\SmarteCOPrintControl.FormConfig.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\SmarteCOPrintControl.FormPrint.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Release\SmarteCOPrintControl.Properties.Resources.resources

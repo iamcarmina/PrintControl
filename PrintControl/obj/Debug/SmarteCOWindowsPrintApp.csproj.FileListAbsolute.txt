@@ -1,0 +1,43 @@
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\bin\Debug\FormLogin.cs
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\bin\Debug\FormLogin.Designer.cs
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.exe.config
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.exe.manifest
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.application
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.exe
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.pdb
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\bin\Debug\Newtonsoft.Json.dll
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCOWindowsPrintApp.csprojAssemblyReference.cache
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.FormException.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.FormLogin.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.FormConfig.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.FormPrint.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\PrintControl.FormTest.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.Properties.Resources.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCOWindowsPrintApp.csproj.GenerateResource.cache
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCOWindowsPrintApp.csproj.CoreCompileInputs.cache
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCO Windows Print App.exe.manifest
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCO Windows Print App.application
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCOWindowsPrintApp.csproj.CopyComplete
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCO Windows Print App.exe
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_09_20190522\PrintControl\PrintControl\obj\Debug\SmarteCO Windows Print App.pdb
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\bin\Debug\FormLogin.cs
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\bin\Debug\FormLogin.Designer.cs
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.exe.config
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.exe.manifest
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.application
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.exe
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.pdb
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\bin\Debug\Newtonsoft.Json.dll
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.FormException.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.FormLogin.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.FormConfig.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.FormPrint.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\PrintControl.FormTest.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.Properties.Resources.resources
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\SmarteCOWindowsPrintApp.csproj.GenerateResource.cache
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\SmarteCOWindowsPrintApp.csproj.CoreCompileInputs.cache
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\SmarteCO Windows Print App.exe.manifest
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\SmarteCO Windows Print App.application
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\SmarteCOWindowsPrintApp.csproj.CopyComplete
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\SmarteCO Windows Print App.exe
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_20190704\PrintControl\PrintControl\obj\Debug\SmarteCO Windows Print App.pdb

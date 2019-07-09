@@ -1,0 +1,71 @@
+E:\work\PrintControl\PrintControl\PrintControl\bin\x64\Debug\FormLogin.cs
+E:\work\PrintControl\PrintControl\PrintControl\bin\x64\Debug\FormLogin.Designer.cs
+E:\work\PrintControl\PrintControl\PrintControl\bin\x64\Debug\PrintControl.exe.config
+E:\work\PrintControl\PrintControl\PrintControl\bin\x64\Debug\PrintControl.exe
+E:\work\PrintControl\PrintControl\PrintControl\bin\x64\Debug\PrintControl.pdb
+E:\work\PrintControl\PrintControl\PrintControl\bin\x64\Debug\DynamicPDF.Printing.NETFramework40.x64.dll
+E:\work\PrintControl\PrintControl\PrintControl\bin\x64\Debug\DynamicPDF.Printing.NETFramework40.x64.xml
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.csprojAssemblyReference.cache
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormLogin.resources
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormConfig.resources
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.Properties.Resources.resources
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.csproj.GenerateResource.cache
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.csproj.CoreCompileInputs.cache
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.csproj.CopyComplete
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.exe
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.pdb
+E:\work\PrintControl\PrintControl\PrintControl\bin\x64\Debug\PrintControl.exe.manifest
+E:\work\PrintControl\PrintControl\PrintControl\bin\x64\Debug\PrintControl.application
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.exe.manifest
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.application
+E:\work\PrintControl\PrintControl\PrintControl\bin\x64\Debug\Newtonsoft.Json.dll
+E:\work\PrintControl\PrintControl\PrintControl\bin\x64\Debug\Newtonsoft.Json.pdb
+E:\work\PrintControl\PrintControl\PrintControl\bin\x64\Debug\Newtonsoft.Json.xml
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormLogin.resources
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormConfig.resources
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.Properties.Resources.resources
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.csproj.GenerateResource.cache
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.csproj.CoreCompileInputs.cache
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.exe
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.pdb
+F:\work\DotNet\PrintControl\PrintControl\bin\x64\Debug\FormLogin.cs
+F:\work\DotNet\PrintControl\PrintControl\bin\x64\Debug\FormLogin.Designer.cs
+F:\work\DotNet\PrintControl\PrintControl\bin\x64\Debug\PrintControl.exe.config
+F:\work\DotNet\PrintControl\PrintControl\bin\x64\Debug\PrintControl.exe.manifest
+F:\work\DotNet\PrintControl\PrintControl\bin\x64\Debug\PrintControl.application
+F:\work\DotNet\PrintControl\PrintControl\bin\x64\Debug\PrintControl.exe
+F:\work\DotNet\PrintControl\PrintControl\bin\x64\Debug\PrintControl.pdb
+F:\work\DotNet\PrintControl\PrintControl\bin\x64\Debug\DynamicPDF.Printing.NETFramework40.x64.dll
+F:\work\DotNet\PrintControl\PrintControl\bin\x64\Debug\DynamicPDF.Printing.NETFramework40.x64.xml
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.exe.manifest
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.application
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.csproj.CopyComplete
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormException.resources
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormPrint.resources
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.csprojAssemblyReference.cache
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormException.resources
+E:\work\PrintControl\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormPrint.resources
+F:\work\DotNet\PrintControl\PrintControl\bin\x64\Debug\Newtonsoft.Json.pdb
+F:\work\DotNet\PrintControl\PrintControl\bin\x64\Debug\Newtonsoft.Json.xml
+F:\work\DotNet\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormTest.resources
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.csprojAssemblyReference.cache
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormException.resources
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormLogin.resources
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormConfig.resources
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormPrint.resources
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.FormTest.resources
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.Properties.Resources.resources
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.csproj.GenerateResource.cache
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.csproj.CoreCompileInputs.cache
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\bin\x64\Debug\FormLogin.cs
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\bin\x64\Debug\FormLogin.Designer.cs
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\bin\x64\Debug\PrintControl.exe.config
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\bin\x64\Debug\PrintControl.exe.manifest
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\bin\x64\Debug\PrintControl.application
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\bin\x64\Debug\PrintControl.exe
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\bin\x64\Debug\PrintControl.pdb
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.exe.manifest
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.application
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.csproj.CopyComplete
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.exe
+C:\Users\Saurabh Jindal\Downloads\PrintControl_09\PrintControl\PrintControl\obj\x64\Debug\PrintControl.pdb
