@@ -213,7 +213,7 @@ namespace SmarteCOPrintControl
             String content = "";
             try
             {
-                String urlApi = Properties.Settings.Default.Host + "/print/co/UpdateOffsetAsync/" + formTypeString + "/" + offset;
+                String urlApi = Properties.Settings.Default.Host + "/print/co/updateOffset/" + formTypeString + "/" + offset;
                 HttpClient client = new HttpClient();
                 client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", this.sessionId);
                 String json = offset;

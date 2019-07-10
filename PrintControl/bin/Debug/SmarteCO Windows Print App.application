@@ -7,14 +7,14 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="SmarteCO Windows Print App.exe.manifest" size="5522">
+    <dependentAssembly dependencyType="install" codebase="SmarteCO Windows Print App.exe.manifest" size="5486">
       <assemblyIdentity name="SmarteCO Windows Print App.exe" version="1.0.0.13" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>omqWKfpYhZjtbk4Wm5KrJLOicFy9J0UugRapt212cq0=</dsig:DigestValue>
+        <dsig:DigestValue>BDkyA9Q4eN9ElBN9xd+lR2B1h9CM3porv6cjoVu7TTk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -49,7 +49,8 @@ namespace SmarteCOPrintControl
                 this.restProxy = new WebPrintRestProxy(sessionId);
                 this.isPrintInitiated = false;
                 this.lblCurrentUser.Text = Properties.Settings.Default.UserUid;
-                this.lblLastLogin.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
+                this.lblLastLogin.Text = Settings1.Default.LoggedInDateTime;
+                this.lblPrintMediaDisp.Text = Settings1.Default.MediaSelected;
                 waitHandle = new AutoResetEvent(false);
                 timer = new System.Windows.Forms.Timer();
                 timer.Interval = 5000;

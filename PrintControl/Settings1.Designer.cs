@@ -130,5 +130,29 @@ namespace SmarteCOPrintControl {
                 this["LoggedIn"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LoggedInDateTime {
+            get {
+                return ((string)(this["LoggedInDateTime"]));
+            }
+            set {
+                this["LoggedInDateTime"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string MediaSelected {
+            get {
+                return ((string)(this["MediaSelected"]));
+            }
+            set {
+                this["MediaSelected"] = value;
+            }
+        }
     }
 }

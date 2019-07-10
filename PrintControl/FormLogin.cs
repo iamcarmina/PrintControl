@@ -100,6 +100,8 @@ namespace SmarteCOPrintControl
                         break;
                 }
                 this.Hide();
+
+                Settings1.Default.LoggedInDateTime = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
                 config = new FormConfig(sessionId);
                 config.ShowDialog(this);
             } catch (Exception ex) {
@@ -167,7 +169,10 @@ namespace SmarteCOPrintControl
                     default:
                         break;
                 }
+
                 this.Hide();
+
+                Settings1.Default.LoggedInDateTime = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
                 config = new FormConfig(sessionId);
                 config.ShowDialog(this);
             }

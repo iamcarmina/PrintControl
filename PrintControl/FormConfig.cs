@@ -49,6 +49,7 @@
                 this.GetOffsetConfig();
                 this.UpdateControls(ConfigState.INIT);
                 this.InitPrinters();
+
                 if (Settings1.Default.PinkCb && Settings1.Default.LoggedIn) this.cbPink.Checked = true;
                 if (Settings1.Default.A4Checkbox && Settings1.Default.LoggedIn) this.cbWhite.Checked = true;
                 if (Settings1.Default.PPWithLogoCb && Settings1.Default.LoggedIn) this.cbPPWithLogo.Checked = true;
@@ -349,25 +350,41 @@
                     if (!this.flag) return;
                 }
                 this.printerConfiguration.PrintMediaSelected = null;
-                if (this.cbWhite.Checked) this.printerConfiguration.PrintMediaSelected = "A4";
+                if (this.cbWhite.Checked)
+                {
+                    this.printerConfiguration.PrintMediaSelected = "A4";
+                    Settings1.Default.MediaSelected = "A4";
+                }
+                    
                 if (this.cbPink.Checked) {
                     if (this.printerConfiguration.PrintMediaSelected == null)
+                    {
                         this.printerConfiguration.PrintMediaSelected = "PrePrinted";
+                        Settings1.Default.MediaSelected = "Pre-Printed";
+                    }
                     else
                     {
                         this.printerConfiguration.PrintMediaSelected = this.printerConfiguration.PrintMediaSelected + ",PrePrinted";
+                        Settings1.Default.MediaSelected = Settings1.Default.MediaSelected + ", Pre-Printed";
                     }
                 }
 
                 if (this.cbPPWithLogo.Checked)
                 {
                     if (this.printerConfiguration.PrintMediaSelected == null)
+                    {
                         this.printerConfiguration.PrintMediaSelected = "PrePrintedWithLogo";
+                        Settings1.Default.MediaSelected = "Pre-Printed (with Logo)";
+                    }
                     else
                     {
                         this.printerConfiguration.PrintMediaSelected = this.printerConfiguration.PrintMediaSelected + ",PrePrintedWithLogo";
+                        Settings1.Default.MediaSelected = Settings1.Default.MediaSelected + ", Pre-Printed (with Logo)";
                     }
                 }
+
+                Console.WriteLine("Settings 1 Default MediaSelected: " + Settings1.Default.MediaSelected);
+                Settings1.Default.Save();
 
                 Console.WriteLine("PrintMediaSelected :- " + this.printerConfiguration.PrintMediaSelected);
                 Settings1.Default.Printer_name = this.cbPrinter.Text;
@@ -400,20 +417,20 @@
 
             if (cbPink.Checked && cbPinkForm.SelectedIndex == 0)
             {
-                Alert("Please select printer tray for Pre-Printed (Without Logo) currCoPrinting.");
+                Alert("Please select printer tray for Pre-Printed.");
                 return output = false;
             }
 
             if (cbWhite.Checked && cbWhiteForm.SelectedIndex == 0)
             {
-                Alert("Please select printer tray for A4 currCoPrinting.");
+                Alert("Please select printer tray for A4.");
                 return output = false;
             }
 
 
             if (cbPPWithLogo.Checked && cbPPWithLogoForm.SelectedIndex == 0)
             {
-                Alert("Please select printer tray for Pre-Printed (With Logo) currCoPrinting.");
+                Alert("Please select printer tray for Pre-Printed (With Logo).");
                 return output = false;
             }
 
@@ -806,7 +823,7 @@
                     if (MsgInt >= MinOffsetInt && MsgInt <= MaxOffsetInt) {
                         //if the value is different from the one in db it will be changed in db
                         await restProxy.UpdateOffsetAsync(formTypeString, msg);
-                        Alert("offset saved");
+
                     }else
                     {
                         Alert("Please choose offSet value in between Min : " + this.minOffset + ", Max : " + maxOffset);

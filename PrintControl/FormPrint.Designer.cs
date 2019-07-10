@@ -31,22 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrint));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.CodataGridView = new System.Windows.Forms.DataGridView();
-            this.ColQTranNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColQCertNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColQRemarks = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bntClose = new System.Windows.Forms.Button();
             this.bntHide = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.PrintedCOdataGrid = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblCurrentUser = new System.Windows.Forms.Label();
+            this.lblLastLogin = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblPrintMediaDisp = new System.Windows.Forms.Label();
             this.ColTranNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCertNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColNoOfOriginal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColNoOfCopies = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColRemarks = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblCurrentUser = new System.Windows.Forms.Label();
-            this.lblLastLogin = new System.Windows.Forms.Label();
+            this.ColQTranNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColQCertNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColQRemarks = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.CodataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrintedCOdataGrid)).BeginInit();
             this.SuspendLayout();
@@ -75,25 +77,6 @@
             this.CodataGridView.RowTemplate.Height = 28;
             this.CodataGridView.Size = new System.Drawing.Size(392, 182);
             this.CodataGridView.TabIndex = 6;
-            // 
-            // ColQTranNo
-            // 
-            this.ColQTranNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColQTranNo.HeaderText = "Transaction No.";
-            this.ColQTranNo.MinimumWidth = 8;
-            this.ColQTranNo.Name = "ColQTranNo";
-            // 
-            // ColQCertNo
-            // 
-            this.ColQCertNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColQCertNo.HeaderText = "Certificate No.";
-            this.ColQCertNo.MinimumWidth = 8;
-            this.ColQCertNo.Name = "ColQCertNo";
-            // 
-            // ColQRemarks
-            // 
-            this.ColQRemarks.HeaderText = "Remarks";
-            this.ColQRemarks.Name = "ColQRemarks";
             // 
             // bntClose
             // 
@@ -135,6 +118,7 @@
             this.ColNoOfOriginal,
             this.ColNoOfCopies,
             this.ColRemarks});
+            this.PrintedCOdataGrid.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PrintedCOdataGrid.Location = new System.Drawing.Point(424, 79);
             this.PrintedCOdataGrid.Margin = new System.Windows.Forms.Padding(2);
             this.PrintedCOdataGrid.Name = "PrintedCOdataGrid";
@@ -142,46 +126,6 @@
             this.PrintedCOdataGrid.RowTemplate.Height = 28;
             this.PrintedCOdataGrid.Size = new System.Drawing.Size(502, 182);
             this.PrintedCOdataGrid.TabIndex = 7;
-            // 
-            // ColTranNo
-            // 
-            this.ColTranNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColTranNo.HeaderText = "Transaction No.";
-            this.ColTranNo.MinimumWidth = 8;
-            this.ColTranNo.Name = "ColTranNo";
-            this.ColTranNo.ReadOnly = true;
-            // 
-            // ColCertNo
-            // 
-            this.ColCertNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColCertNo.HeaderText = "Certificate No.";
-            this.ColCertNo.MinimumWidth = 8;
-            this.ColCertNo.Name = "ColCertNo";
-            this.ColCertNo.ReadOnly = true;
-            // 
-            // ColNoOfOriginal
-            // 
-            this.ColNoOfOriginal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColNoOfOriginal.FillWeight = 50F;
-            this.ColNoOfOriginal.HeaderText = "Original";
-            this.ColNoOfOriginal.MinimumWidth = 8;
-            this.ColNoOfOriginal.Name = "ColNoOfOriginal";
-            this.ColNoOfOriginal.ReadOnly = true;
-            // 
-            // ColNoOfCopies
-            // 
-            this.ColNoOfCopies.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColNoOfCopies.FillWeight = 50F;
-            this.ColNoOfCopies.HeaderText = "Copies";
-            this.ColNoOfCopies.MinimumWidth = 8;
-            this.ColNoOfCopies.Name = "ColNoOfCopies";
-            this.ColNoOfCopies.ReadOnly = true;
-            // 
-            // ColRemarks
-            // 
-            this.ColRemarks.HeaderText = "Remarks";
-            this.ColRemarks.Name = "ColRemarks";
-            this.ColRemarks.ReadOnly = true;
             // 
             // label1
             // 
@@ -223,6 +167,94 @@
             this.lblLastLogin.TabIndex = 13;
             this.lblLastLogin.Text = " ";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(213, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Displaying certificates with Print Media type:";
+            // 
+            // lblPrintMediaDisp
+            // 
+            this.lblPrintMediaDisp.AutoSize = true;
+            this.lblPrintMediaDisp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrintMediaDisp.Location = new System.Drawing.Point(228, 27);
+            this.lblPrintMediaDisp.Name = "lblPrintMediaDisp";
+            this.lblPrintMediaDisp.Size = new System.Drawing.Size(11, 13);
+            this.lblPrintMediaDisp.TabIndex = 15;
+            this.lblPrintMediaDisp.Text = " ";
+            // 
+            // ColTranNo
+            // 
+            this.ColTranNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColTranNo.HeaderText = "Transaction No.";
+            this.ColTranNo.MinimumWidth = 8;
+            this.ColTranNo.Name = "ColTranNo";
+            this.ColTranNo.ReadOnly = true;
+            this.ColTranNo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColTranNo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColCertNo
+            // 
+            this.ColCertNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColCertNo.HeaderText = "Certificate No.";
+            this.ColCertNo.MinimumWidth = 8;
+            this.ColCertNo.Name = "ColCertNo";
+            this.ColCertNo.ReadOnly = true;
+            this.ColCertNo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColCertNo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColNoOfOriginal
+            // 
+            this.ColNoOfOriginal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColNoOfOriginal.FillWeight = 50F;
+            this.ColNoOfOriginal.HeaderText = "Original";
+            this.ColNoOfOriginal.MinimumWidth = 8;
+            this.ColNoOfOriginal.Name = "ColNoOfOriginal";
+            this.ColNoOfOriginal.ReadOnly = true;
+            this.ColNoOfOriginal.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColNoOfOriginal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColNoOfCopies
+            // 
+            this.ColNoOfCopies.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColNoOfCopies.FillWeight = 50F;
+            this.ColNoOfCopies.HeaderText = "Copies";
+            this.ColNoOfCopies.MinimumWidth = 8;
+            this.ColNoOfCopies.Name = "ColNoOfCopies";
+            this.ColNoOfCopies.ReadOnly = true;
+            this.ColNoOfCopies.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColNoOfCopies.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColRemarks
+            // 
+            this.ColRemarks.HeaderText = "Remarks";
+            this.ColRemarks.Name = "ColRemarks";
+            this.ColRemarks.ReadOnly = true;
+            this.ColRemarks.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColRemarks.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColQTranNo
+            // 
+            this.ColQTranNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColQTranNo.HeaderText = "Transaction No.";
+            this.ColQTranNo.MinimumWidth = 8;
+            this.ColQTranNo.Name = "ColQTranNo";
+            // 
+            // ColQCertNo
+            // 
+            this.ColQCertNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColQCertNo.HeaderText = "Certificate No.";
+            this.ColQCertNo.MinimumWidth = 8;
+            this.ColQCertNo.Name = "ColQCertNo";
+            // 
+            // ColQRemarks
+            // 
+            this.ColQRemarks.HeaderText = "Remarks";
+            this.ColQRemarks.Name = "ColQRemarks";
+            // 
             // FormPrint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,6 +262,8 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(938, 317);
+            this.Controls.Add(this.lblPrintMediaDisp);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblLastLogin);
             this.Controls.Add(this.lblCurrentUser);
             this.Controls.Add(this.label4);
@@ -261,17 +295,19 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView CodataGridView;
         private System.Windows.Forms.DataGridView PrintedCOdataGrid;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblCurrentUser;
+        private System.Windows.Forms.Label lblLastLogin;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblPrintMediaDisp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColQTranNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColQCertNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColQRemarks;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColTranNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCertNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNoOfOriginal;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNoOfCopies;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColRemarks;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColQTranNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColQCertNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColQRemarks;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblCurrentUser;
-        private System.Windows.Forms.Label lblLastLogin;
     }
 }

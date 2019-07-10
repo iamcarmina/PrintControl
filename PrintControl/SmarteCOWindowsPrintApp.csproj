@@ -84,7 +84,10 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Designbolts-Free-Multimedia-Printer.ico</ApplicationIcon>
+    <ApplicationIcon>smart_eCOO-printer.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DynamicPDF.Printing.NETFramework40.x64, Version=4.2.0.38157, Culture=neutral, PublicKeyToken=09b5ce0d5c0a9d8b, processorArchitecture=AMD64">
@@ -211,7 +214,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Designbolts-Free-Multimedia-Printer.ico" />
+    <Content Include="smart_eCOO-printer.ico" />
     <None Include="Resources\FormIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

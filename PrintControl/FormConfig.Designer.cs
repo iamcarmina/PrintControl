@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConfig));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.OffsetMinMaxLabel2 = new System.Windows.Forms.Label();
             this.OffsetMinMaxLabel = new System.Windows.Forms.Label();
             this.txtWithLogoOffset = new System.Windows.Forms.TextBox();
@@ -59,6 +60,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.OffsetMinMaxLabel2);
             this.groupBox1.Controls.Add(this.OffsetMinMaxLabel);
             this.groupBox1.Controls.Add(this.txtWithLogoOffset);
@@ -83,15 +85,26 @@
             this.groupBox1.Controls.Add(this.lbPrinter);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(559, 208);
+            this.groupBox1.Size = new System.Drawing.Size(600, 248);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Printer Configuration";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(27, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(265, 26);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "- Select the Print Media / paper type to use for printing.\r\n- Select the correct " +
+    "Printer Tray for the paper source.";
+            // 
             // OffsetMinMaxLabel2
             // 
             this.OffsetMinMaxLabel2.AutoSize = true;
-            this.OffsetMinMaxLabel2.Location = new System.Drawing.Point(381, 177);
+            this.OffsetMinMaxLabel2.Location = new System.Drawing.Point(397, 216);
             this.OffsetMinMaxLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.OffsetMinMaxLabel2.Name = "OffsetMinMaxLabel2";
             this.OffsetMinMaxLabel2.Size = new System.Drawing.Size(95, 13);
@@ -101,7 +114,7 @@
             // OffsetMinMaxLabel
             // 
             this.OffsetMinMaxLabel.AutoSize = true;
-            this.OffsetMinMaxLabel.Location = new System.Drawing.Point(381, 118);
+            this.OffsetMinMaxLabel.Location = new System.Drawing.Point(397, 157);
             this.OffsetMinMaxLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.OffsetMinMaxLabel.Name = "OffsetMinMaxLabel";
             this.OffsetMinMaxLabel.Size = new System.Drawing.Size(95, 13);
@@ -110,7 +123,7 @@
             // 
             // txtWithLogoOffset
             // 
-            this.txtWithLogoOffset.Location = new System.Drawing.Point(283, 116);
+            this.txtWithLogoOffset.Location = new System.Drawing.Point(299, 155);
             this.txtWithLogoOffset.Name = "txtWithLogoOffset";
             this.txtWithLogoOffset.Size = new System.Drawing.Size(88, 20);
             this.txtWithLogoOffset.TabIndex = 22;
@@ -119,7 +132,7 @@
             // WithLogoOffset
             // 
             this.WithLogoOffset.AutoSize = true;
-            this.WithLogoOffset.Location = new System.Drawing.Point(204, 120);
+            this.WithLogoOffset.Location = new System.Drawing.Point(220, 159);
             this.WithLogoOffset.Name = "WithLogoOffset";
             this.WithLogoOffset.Size = new System.Drawing.Size(68, 13);
             this.WithLogoOffset.TabIndex = 21;
@@ -128,17 +141,17 @@
             // cbPPWithLogo
             // 
             this.cbPPWithLogo.AutoSize = true;
-            this.cbPPWithLogo.Location = new System.Drawing.Point(14, 90);
+            this.cbPPWithLogo.Location = new System.Drawing.Point(30, 129);
             this.cbPPWithLogo.Name = "cbPPWithLogo";
-            this.cbPPWithLogo.Size = new System.Drawing.Size(127, 17);
+            this.cbPPWithLogo.Size = new System.Drawing.Size(133, 17);
             this.cbPPWithLogo.TabIndex = 20;
-            this.cbPPWithLogo.Text = "PrePrinted(with Logo)";
+            this.cbPPWithLogo.Text = "Pre-Printed (with Logo)";
             this.cbPPWithLogo.UseVisualStyleBackColor = true;
             this.cbPPWithLogo.CheckedChanged += new System.EventHandler(this.cbPPWithLogo_CheckedChanged);
             // 
             // bntPPWithLogo
             // 
-            this.bntPPWithLogo.Location = new System.Drawing.Point(450, 86);
+            this.bntPPWithLogo.Location = new System.Drawing.Point(466, 125);
             this.bntPPWithLogo.Name = "bntPPWithLogo";
             this.bntPPWithLogo.Size = new System.Drawing.Size(75, 23);
             this.bntPPWithLogo.TabIndex = 19;
@@ -150,7 +163,7 @@
             // 
             this.cbPPWithLogoForm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPPWithLogoForm.FormattingEnabled = true;
-            this.cbPPWithLogoForm.Location = new System.Drawing.Point(283, 88);
+            this.cbPPWithLogoForm.Location = new System.Drawing.Point(299, 127);
             this.cbPPWithLogoForm.Name = "cbPPWithLogoForm";
             this.cbPPWithLogoForm.Size = new System.Drawing.Size(153, 21);
             this.cbPPWithLogoForm.TabIndex = 18;
@@ -159,7 +172,7 @@
             // lbPPWithLogo
             // 
             this.lbPPWithLogo.AutoSize = true;
-            this.lbPPWithLogo.Location = new System.Drawing.Point(204, 93);
+            this.lbPPWithLogo.Location = new System.Drawing.Point(220, 132);
             this.lbPPWithLogo.Name = "lbPPWithLogo";
             this.lbPPWithLogo.Size = new System.Drawing.Size(64, 13);
             this.lbPPWithLogo.TabIndex = 17;
@@ -167,7 +180,7 @@
             // 
             // txtWithoutLogoOffset
             // 
-            this.txtWithoutLogoOffset.Location = new System.Drawing.Point(283, 174);
+            this.txtWithoutLogoOffset.Location = new System.Drawing.Point(299, 213);
             this.txtWithoutLogoOffset.Name = "txtWithoutLogoOffset";
             this.txtWithoutLogoOffset.Size = new System.Drawing.Size(88, 20);
             this.txtWithoutLogoOffset.TabIndex = 16;
@@ -176,7 +189,7 @@
             // WithOutLogoOffset
             // 
             this.WithOutLogoOffset.AutoSize = true;
-            this.WithOutLogoOffset.Location = new System.Drawing.Point(204, 174);
+            this.WithOutLogoOffset.Location = new System.Drawing.Point(220, 213);
             this.WithOutLogoOffset.Name = "WithOutLogoOffset";
             this.WithOutLogoOffset.Size = new System.Drawing.Size(68, 13);
             this.WithOutLogoOffset.TabIndex = 15;
@@ -204,18 +217,18 @@
             // cbPink
             // 
             this.cbPink.AutoSize = true;
-            this.cbPink.Location = new System.Drawing.Point(14, 145);
+            this.cbPink.Location = new System.Drawing.Point(30, 184);
             this.cbPink.Name = "cbPink";
-            this.cbPink.Size = new System.Drawing.Size(75, 17);
+            this.cbPink.Size = new System.Drawing.Size(78, 17);
             this.cbPink.TabIndex = 12;
-            this.cbPink.Text = "PrePrinted";
+            this.cbPink.Text = "Pre-Printed";
             this.cbPink.UseVisualStyleBackColor = true;
             this.cbPink.CheckedChanged += new System.EventHandler(this.cbPink_CheckedChanged);
             // 
             // cbWhite
             // 
             this.cbWhite.AutoSize = true;
-            this.cbWhite.Location = new System.Drawing.Point(14, 66);
+            this.cbWhite.Location = new System.Drawing.Point(30, 105);
             this.cbWhite.Name = "cbWhite";
             this.cbWhite.Size = new System.Drawing.Size(39, 17);
             this.cbWhite.TabIndex = 11;
@@ -225,7 +238,7 @@
             // 
             // bntPink
             // 
-            this.bntPink.Location = new System.Drawing.Point(450, 142);
+            this.bntPink.Location = new System.Drawing.Point(466, 181);
             this.bntPink.Name = "bntPink";
             this.bntPink.Size = new System.Drawing.Size(75, 23);
             this.bntPink.TabIndex = 7;
@@ -235,7 +248,7 @@
             // 
             // bntWhite
             // 
-            this.bntWhite.Location = new System.Drawing.Point(450, 64);
+            this.bntWhite.Location = new System.Drawing.Point(466, 103);
             this.bntWhite.Name = "bntWhite";
             this.bntWhite.Size = new System.Drawing.Size(75, 23);
             this.bntWhite.TabIndex = 6;
@@ -247,7 +260,7 @@
             // 
             this.cbPinkForm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPinkForm.FormattingEnabled = true;
-            this.cbPinkForm.Location = new System.Drawing.Point(283, 145);
+            this.cbPinkForm.Location = new System.Drawing.Point(299, 184);
             this.cbPinkForm.Name = "cbPinkForm";
             this.cbPinkForm.Size = new System.Drawing.Size(153, 21);
             this.cbPinkForm.TabIndex = 5;
@@ -256,7 +269,7 @@
             // lbPinkForm
             // 
             this.lbPinkForm.AutoSize = true;
-            this.lbPinkForm.Location = new System.Drawing.Point(204, 150);
+            this.lbPinkForm.Location = new System.Drawing.Point(220, 189);
             this.lbPinkForm.Name = "lbPinkForm";
             this.lbPinkForm.Size = new System.Drawing.Size(61, 13);
             this.lbPinkForm.TabIndex = 4;
@@ -266,7 +279,7 @@
             // 
             this.cbWhiteForm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbWhiteForm.FormattingEnabled = true;
-            this.cbWhiteForm.Location = new System.Drawing.Point(283, 66);
+            this.cbWhiteForm.Location = new System.Drawing.Point(299, 105);
             this.cbWhiteForm.Name = "cbWhiteForm";
             this.cbWhiteForm.Size = new System.Drawing.Size(153, 21);
             this.cbWhiteForm.TabIndex = 3;
@@ -275,7 +288,7 @@
             // lbWhiteForm
             // 
             this.lbWhiteForm.AutoSize = true;
-            this.lbWhiteForm.Location = new System.Drawing.Point(204, 68);
+            this.lbWhiteForm.Location = new System.Drawing.Point(220, 107);
             this.lbWhiteForm.Name = "lbWhiteForm";
             this.lbWhiteForm.Size = new System.Drawing.Size(64, 13);
             this.lbWhiteForm.TabIndex = 2;
@@ -302,7 +315,7 @@
             // 
             // bntStart
             // 
-            this.bntStart.Location = new System.Drawing.Point(405, 227);
+            this.bntStart.Location = new System.Drawing.Point(538, 267);
             this.bntStart.Name = "bntStart";
             this.bntStart.Size = new System.Drawing.Size(75, 23);
             this.bntStart.TabIndex = 11;
@@ -312,7 +325,7 @@
             // 
             // bntExit
             // 
-            this.bntExit.Location = new System.Drawing.Point(324, 227);
+            this.bntExit.Location = new System.Drawing.Point(457, 267);
             this.bntExit.Name = "bntExit";
             this.bntExit.Size = new System.Drawing.Size(75, 23);
             this.bntExit.TabIndex = 12;
@@ -324,7 +337,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 259);
+            this.ClientSize = new System.Drawing.Size(650, 311);
             this.Controls.Add(this.bntExit);
             this.Controls.Add(this.bntStart);
             this.Controls.Add(this.groupBox1);
@@ -368,5 +381,6 @@
         private System.Windows.Forms.Label WithOutLogoOffset;
         private System.Windows.Forms.Label OffsetMinMaxLabel;
         private System.Windows.Forms.Label OffsetMinMaxLabel2;
+        private System.Windows.Forms.Label label1;
     }
 }
