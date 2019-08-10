@@ -72,10 +72,10 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>AFA0BAB1B97C1CB37BD52F39F1F0BD88568DEC6A</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>9C3BF8754D9B9D132DB400B4D5EA7CC3FB76738B</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>WIndowsPrintApp_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>SmartECO.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -196,6 +196,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
     </None>
+    <None Include="SmartECO.pfx" />
     <None Include="WIndowsPrintApp_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

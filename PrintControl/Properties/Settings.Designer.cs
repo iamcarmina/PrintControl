@@ -25,7 +25,7 @@ namespace SmarteCOPrintControl.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://smarteco-preprodweb.vcargocloud.com/WebPrint")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:8080/WebPrint")]
         public string Host {
             get {
                 return ((string)(this["Host"]));

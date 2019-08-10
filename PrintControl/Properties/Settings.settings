@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Host" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://smarteco-preprodweb.vcargocloud.com/WebPrint</Value>
+      <Value Profile="(Default)">http://localhost:8080/WebPrint</Value>
     </Setting>
     <Setting Name="UserUid" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

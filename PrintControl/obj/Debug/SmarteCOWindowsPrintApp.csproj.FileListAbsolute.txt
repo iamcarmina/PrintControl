@@ -48,7 +48,9 @@ D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintC
 D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.application
 D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.exe
 D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\bin\Debug\SmarteCO Windows Print App.pdb
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\bin\Debug\DynamicPDF.Printing.NETFramework40.x64.dll
 D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\bin\Debug\Newtonsoft.Json.dll
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\bin\Debug\DynamicPDF.Printing.NETFramework40.x64.xml
 D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.FormException.resources
 D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.FormLogin.resources
 D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\obj\Debug\SmarteCOPrintControl.FormConfig.resources
@@ -62,3 +64,4 @@ D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintC
 D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\obj\Debug\SmarteCOWindowsPrintApp.csproj.CopyComplete
 D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\obj\Debug\SmarteCO Windows Print App.exe
 D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\obj\Debug\SmarteCO Windows Print App.pdb
+D:\Project\Workspace\SMARTECO_BRANCH_CSHARP\PrintControl_Git\PrintControl\PrintControl\obj\Debug\SmarteCOWindowsPrintApp.csprojAssemblyReference.cache

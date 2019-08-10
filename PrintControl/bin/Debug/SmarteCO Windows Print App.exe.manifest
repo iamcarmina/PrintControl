@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SmarteCO Windows Print App.exe" size="305136">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SmarteCO Windows Print App.exe" size="307688">
       <assemblyIdentity name="SmarteCO Windows Print App" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>DjnJ/7h2z4Wlx9cWn4YBWkoKpAtDmWuNYrswkZCqz4c=</dsig:DigestValue>
+        <dsig:DigestValue>i/Dcs2TZH3ywrC6CCAviQ5ukzQoZK4bAWHY5f7++aKs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -87,13 +87,13 @@
       <dsig:DigestValue>yphKQNZna/iowTVs5kc+mCbfxp3U33vn6HPZ8etQxDE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SmarteCO Windows Print App.exe.config" size="3159">
+  <file name="SmarteCO Windows Print App.exe.config" size="3133">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>b1wrflW7ao11A/zpK/KvsBWlgk4O2ZbFVKyoVM6GktM=</dsig:DigestValue>
+      <dsig:DigestValue>vUoEI73hdEQcAzlK/6aJ6QAXEU4JuG0YuBDiJgJn/AM=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

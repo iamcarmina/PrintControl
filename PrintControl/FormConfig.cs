@@ -44,6 +44,7 @@
         public FormConfig(String sessionId)  {
             try {
                 InitializeComponent();
+
                 this.sessionId = sessionId;
                 this.restProxy = new WebPrintRestProxy(sessionId);
                 this.GetOffsetConfig();
@@ -653,13 +654,21 @@
                 PrintJob printJob = new PrintJob(this.printerConfiguration.Name, tempFile);
                 printJob.DocumentName = "Letter Portrait";
                 if (printJob.Printer.Color)
+                {
                     printJob.PrintOptions.Color = true;
+                }
+                    
                 printJob.PrintOptions.Copies = 1;
                 //settin paper size to A4 #Saurabh
                 PaperSize paperSize = printJob.Printer.PaperSizes.A4;
-                if (paperSize != null) printJob.PrintOptions.PaperSize = paperSize;
+                if (paperSize != null)
+                {
+                    printJob.PrintOptions.PaperSize = paperSize;
+                }
+
                 printJob.PrintOptions.HorizontalAlign = HorizontalAlign.Center;
                 printJob.PrintOptions.Orientation.Type = OrientationType.Portrait;
+
                 AutoPageScaling scaling = new AutoPageScaling(ScaleTo.PagePrintableArea, true, true);
                 printJob.PrintOptions.Scaling = PageScaling.ActualSize;
                 printJob.PrintOptions.Scaling = scaling;

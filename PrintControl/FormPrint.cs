@@ -444,13 +444,14 @@ namespace SmarteCOPrintControl
                 printJob.Succeeded += PrintJob_Succeeded;
                 printJob.Failed += PrintJob_Failed;
                 printJob.Updated += PrintJob_Updated;
+                
                 //code to counter the non select print media type. to stop them currCoPrinting from random tray
-                if(printJob.PrintOptions.PaperSource.Name == "Automatically Select")
+                if (printJob.PrintOptions.PaperSource.Name == "Automatically Select")
                 {
                     throw new Exception("Please select printer tray for media type" + coDoc.coMediaType);
                 }
 
-                //TestPrintJob_Succeeded();
+               //TestPrintJob_Succeeded();
                printJob.Print();
             } catch (Exception ex) {
                 Console.WriteLine(ex.StackTrace);
