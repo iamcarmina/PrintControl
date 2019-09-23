@@ -1,4 +1,4 @@
-﻿using ceTe.DynamicPDF.Printing;
+using ceTe.DynamicPDF.Printing;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -29,7 +29,9 @@ namespace SmarteCOPrintControl
         private FormConfig config;
 
         public ArrayList printCompletedCo = new ArrayList();
-        
+        //Holds the CO(s) that will be sent to the PC Printer Queue
+        public ArrayList coToPrinterQueue = new ArrayList();
+
         //Holds the  value that is currently currCoPrinting
         private String currCoPrinting = null;
        
@@ -259,7 +261,7 @@ namespace SmarteCOPrintControl
 
             foreach(String doc in coDocList) {
 
-                if (String.IsNullOrEmpty(currCoPrinting))
+                if (String.IsNullOrEmpty(currCoPrinting) || (doc != currCoPrinting))
                 {
                     currCoPrinting = doc;
                 }
@@ -285,86 +287,117 @@ namespace SmarteCOPrintControl
          * 
          * <param name="coDocNo">CO docNo and cert no. concatenated by colon (:)</param>
          */
-        private async void ExecutePrintAsync(String coDocNo) {
-            try {
-               
-                
+        private async void  ExecutePrintAsync(String coDocNo)
+        {
+            try
+            {
                 char[] sep = { ':' };
-                if (null != coDocNo && coDocNo.Length > 0)
+                if (null == coDocNo || coDocNo.Length <= 0)
+                    throw new Exception("param coDocNo null or empty");
+
+                String[] arrcoDocNo = coDocNo.Split(sep);
+                String coDocNoSplit = arrcoDocNo[0];
+                Console.WriteLine("ExecutePrintAsync called for " + coDocNoSplit);
+
+                //set the bProcess to true for what?
+                isPrintInitiated = true;
+
+                //Calls the getCoDetailsAsync from server
+                CoDoc coDoc = await restProxy.getCoDetailsAsync(coDocNoSplit);
+
+                if (null == coDoc)
+                    throw new Exception("coDoc null for " + coDocNoSplit);
+                Console.WriteLine("CODoc found: " + coDoc.ToString());
+                PrintType printType = PrintType.COPY;
+
+                //if errCode is 0, no issue?
+                if (!coDoc.errCode.Equals("0"))
+                    throw new Exception("coDoc error code " + coDoc.errCode);
+
+                // if already in queue no more processing 
+                if (coToPrinterQueue.Contains(coDoc.coDocno))
+                    throw new Exception("coDoc in print queue " + coDoc.coDocno);
+
+                // isPrintSuccess = false;
+                //if nothing has been printed yet and coOriginal is greater than 0 or = 1, set the printType to ORIGINAL
+                if ((coDoc.coDBPrintedCopies == 0 && coDoc.coOriginal > 0) || coDoc.docReqtype.Equals("CO_TESTPRINT"))
                 {
-                    String[] arrcoDocNo = coDocNo.Split(sep);
-                    String coDocNoSplit = arrcoDocNo[0];
+                    printType = PrintType.ORIGINAL;
+                }
 
-                    Console.WriteLine("ExecutePrintAsync called for " + coDocNoSplit);
+                //Add the CO that is not yet in the printer queue list earlier, to be sent to printer
+                coToPrinterQueue.Add(coDoc.coDocno);
 
-                    //set the bProcess to true for what?
-                    isPrintInitiated = true;
+                //Do the actual currCoPrinting
+                SendCOToPrinter(printType, coDoc);
 
-                    //Calls the getCoDetailsAsync from server
-                    CoDoc coDoc = await restProxy.getCoDetailsAsync(coDocNoSplit);
-                    
-                    if (null != coDoc)
+                //CoDoc responseCO = null;
+
+                //Waits for the current task to finish 
+                // it will time out in 10 secs - Bill
+                waitHandle.WaitOne(10000);
+
+                if (!isPrintSuccess)
+                {
+                    // this means print job sends to print for 10 secs and no response come back for success or fail
+                    Console.WriteLine("Printed fail for CO.. " + coDocNo);
+
+                    // we have to remove print job if it is not success
+                    //printJob.Dispose();
+                    //printJob = null;
+                    coToPrinterQueue.Remove(coDoc.coDocno);
+
+                    //Printing Error message to prompt the users on what to do when Printing Error
+                    String msg = "Printing error. Please do the following: \n\n";
+                    msg += "\u2022 Ensure that you are connected to the correct network\n";
+                    msg += "\u2022 Confirm that the printer is available\n";
+                    msg += "\u2022 Clear your Windows Printer Queue";
+                    String caption = "SmartECO Printing Message";
+
+                    DialogResult result = MessageBox.Show(msg, caption, MessageBoxButtons.OK);
+
+                    //auto-close the Print Queue dialog box when user clicks OK on the msg box
+                    if (result == DialogResult.OK)
                     {
-                        Console.WriteLine("CODoc found: " + coDoc.ToString());
-                        PrintType printType = PrintType.COPY;
+                        bntClose.PerformClick();
+                    }
 
-                        //if errCode is 0, no issue?
-                        if (coDoc.errCode.Equals("0"))
-                        {
-                           // isPrintSuccess = false;
-                            //if nothing has been printed yet and coOriginal is greater than 0 or = 1, set the printType to ORIGINAL
-                            if ((coDoc.coDBPrintedCopies == 0 && coDoc.coOriginal > 0) || coDoc.docReqtype.Equals("CO_TESTPRINT"))
-                            {
-                                printType = PrintType.ORIGINAL;
-                            }
-                                
-                            //Do the actual currCoPrinting
-                            SendCOToPrinter(printType, coDoc);
-                            CoDoc responseCO = null;
-                            
-                            //Waits for the current task to finish 
-                            waitHandle.WaitOne();
+                    //return;
+                }
+                else
+                {
 
-                            if (isPrintSuccess)
-                            {
-                                Console.WriteLine("Printed successfully....");
-                                coDoc.coPrintedCopies = coDoc.coDBPrintedCopies + 1;
-                                Console.WriteLine("coDoc.coDBPrintedCopies  " + coDoc.coDBPrintedCopies);
-                                responseCO = await restProxy.DoCOUpdateAsync(coDoc);
-                                if(responseCO.errCode != "0")
-                                {
-                                    Console.WriteLine("coDoc.errCode: " + responseCO.errCode);
-                                    Alert("Error occured while updating CO record. Error Code "+ responseCO.errCode);
-                                    //stop timing and notify User to call Support and inform the error received
+                    //remove the co from the printer queue regardless of success or fail print
+                    coToPrinterQueue.Remove(coDoc.coDocno);
 
-                                    //need to check if we can do this or not
-                                    //LogException(new Exception("Non Zero Error code received from the Server. Error COde + "+ responseCO.errCode));
-                                }
+                    Console.WriteLine("Printed successfully....");
+                    coDoc.coPrintedCopies = coDoc.coDBPrintedCopies + 1;
+                    Console.WriteLine("coDoc.coDBPrintedCopies  " + coDoc.coDBPrintedCopies);
+                    CoDoc responseCO = await restProxy.DoCOUpdateAsync(coDoc);
+                    Console.WriteLine("responseCO value here ... " + responseCO);
+                    if (responseCO.errCode != "0")
+                    {
+                        Console.WriteLine("coDoc.errCode: " + responseCO.errCode);
+                        Alert("Error occured while updating CO record. Error Code " + responseCO.errCode);
+                        //stop timing and notify User to call Support and inform the error received
 
-                                //only move the to completed listing if values below are equal
-                                if((coDoc.coPrintedCopies == (coDoc.coOriginal + coDoc.coCopies)) || (coDoc.docReqtype.Equals("CO_TESTPRINT") || coDoc.docReqtype.Equals("CO_CHAMBER_COPY")))
-                                {
-                                    //move to the other side
-                                    printCompletedCo.Add(coDocNo);
-                                    PopulateDataGridCompletedCO(printCompletedCo);
-                                    currCoPrinting = null;
-                                }
-                               
+                        //need to check if we can do this or not
+                        //LogException(new Exception("Non Zero Error code received from the Server. Error COde + "+ responseCO.errCode));
+                    }
 
+                    //only move the to completed listing if values below are equal
+                    if ((coDoc.coPrintedCopies == (coDoc.coOriginal + coDoc.coCopies)) || (coDoc.docReqtype.Equals("CO_TESTPRINT") || coDoc.docReqtype.Equals("CO_CHAMBER_COPY")))
+                    {
+                        //move to the other side
+                        printCompletedCo.Add(coDocNo);
 
-                            } else
-                            {
-                                //just making sure it's really set to false
-                                isPrintSuccess = false;
-                                
-                                Console.WriteLine("Printed fail....");
-                            }
-                        } else {
-                            Console.WriteLine("coDoc.errCode: " + coDoc.errCode);
-                        }
+                        PopulateDataGridCompletedCO(printCompletedCo);
+                        currCoPrinting = null;
                     }
                 }
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 LogException(ex);
             }
 
@@ -380,7 +413,8 @@ namespace SmarteCOPrintControl
          * <param name="printType">Can be ORIGINAL or COPY</param>
          * <param name="coDoc">Contains all related details of the CO</param>
         */
-        private void SendCOToPrinter(PrintType printType, CoDoc coDoc) {
+        private void SendCOToPrinter(PrintType printType, CoDoc coDoc)
+        {
             try {
                 
                 //If no printerConfiguration object is found.
@@ -453,6 +487,9 @@ namespace SmarteCOPrintControl
 
                //TestPrintJob_Succeeded();
                printJob.Print();
+
+                // Bill
+                //return printJob;
             } catch (Exception ex) {
                 Console.WriteLine(ex.StackTrace);
                 throw ex;
